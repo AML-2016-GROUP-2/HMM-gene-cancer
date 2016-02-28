@@ -10,7 +10,7 @@ Steps implemented:
 
 Training:
 
-The initial Hmm was trained with initial.jason, which had 3 states initially which also constituted emission matrix, initial probability and transition probability matrix. Utils.py gave vector quantized data which was fed to train.py. The vector quantization function was used to map each vector given in the training data to a particular integer ranging from 0 to 15 Since bins = 16, and this vector quantization was achieved by k-Means clustering. 4 hmms were created as there were 4 types of cancer in dataset, trained them respectively with observable list which was created from mapped observables through forward-backward algorithm and made a pickle file for each trained HMM.
+The initial Hmm was trained with initial.json, which had 3 states initially which also constituted emission matrix, initial probability and transition probability matrix. Utils.py gave vector quantized data which was fed to train.py. The vector quantization function was used to map each vector given in the training data to a particular integer ranging from 0 to 15 Since bins = 16, and this vector quantization was achieved by k-Means clustering. 4 hmms were created as there were 4 types of cancer in dataset, trained them respectively with observable list which was created from mapped observables through forward-backward algorithm and made a pickle file for each trained HMM.
 
 Testing:
 
